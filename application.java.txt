@@ -1,0 +1,25 @@
+// importing the file class
+import java.io.file;
+
+class main {
+   public static void main(string[] args}  {
+
+     //create a file object for the current location
+     file file = new file("newfile.txt");
+
+     try {
+
+       // trying to create a file based on the object
+       boolean value = file.createnewfile();
+       if  (value)  {
+         system.out.println("the new file is created.");
+       }
+       else {
+         system.out.println("the file already exists");
+       }
+     }
+     catch (exception e) {
+       e.getstacktarce();
+     }
+   }
+}  
